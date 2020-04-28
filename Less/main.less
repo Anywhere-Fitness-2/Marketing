@@ -7,6 +7,12 @@
   align-items: center;
   margin-bottom: 5%;
   margin-top: 20%;
+
+  @media @mobile {
+    padding-top: 30%;
+
+    .flex-it(column, center);
+  }
   div {
     img {
       width: 200px;
@@ -22,6 +28,11 @@
   p {
     margin-top: 16px;
     width: 200px;
+
+    @media @mobile {
+      margin-bottom: 10%;
+      padding-bottom: 5%;
+    }
   } //closes p
 } //this closes .middleimages
 
@@ -61,4 +72,8 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 3%;
+
+  @media @mobile {
+    .flex-it(column, center);
+  }
 } //close cards
