@@ -105,7 +105,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.2;
 }
 ol,
 ul {
@@ -182,10 +182,7 @@ p {
 }
 #home {
   height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  width: 100%;
 }
 header nav {
   width: 100%;
@@ -196,29 +193,29 @@ header nav {
 }
 header nav a {
   justify-content: space-evenly;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+header nav a:hover {
+  color: #232222;
 }
 header .logo {
   background-color: #ffab00;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
+  margin-left: 5%;
   color: #ffffff;
 }
 .links {
+  background-color: #ffab00;
   width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-nav a:hover {
-  color: #232222;
-}
-nav a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #ffffff;
-  letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
 }
 #footer-links {
   background-color: #ffab00;
@@ -226,43 +223,16 @@ nav a {
   padding: 4%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #footer-links a {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-family: "Lato", sans-serif;
   text-decoration: none;
 }
-#footer-links a a:hover {
+#footer-links a:hover {
   color: #232222;
-}
-.section-cards {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.section-cards button {
-  margin-top: 16px;
-}
-.section-cards p {
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 10%;
-}
-.section-cards h2 {
-  color: #ffffff;
-  margin-bottom: 10%;
-}
-.section-cards button:hover {
-  background-color: #232222;
-  color: #ffab00;
-}
-button:hover {
-  background-color: #232222;
-  color: #ffab00;
 }
 .middle-images {
   color: #ffffff;
@@ -270,37 +240,74 @@ button:hover {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10%;
-  margin-top: 5%;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 20%;
+}
+.middle-images div img {
+  width: 200px;
+  margin-bottom: 5%;
 }
 .middle-images h2 {
+  margin-top: 5%;
   margin-bottom: 5%;
+  color: #ffab00;
 }
 .middle-images p {
   margin-top: 16px;
+  width: 200px;
+}
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+.section-cards p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10%;
+  width: 300px;
+  line-height: 1.25;
+}
+.section-cards h2 {
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+.section-cards img {
+  width: 300px;
+  margin-bottom: 10%;
+  border-radius: 2px;
+}
+.section-cards button {
+  width: 150px;
+  height: 40px;
 }
 #cards {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 button {
-  width: 150px;
   background-color: #ffab00;
+  width: 300px;
+  height: 46px;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+button:hover {
+  background-color: #232222;
+  border: 1px solid #ffab00;
+  color: #ffab00;
   padding: 4px;
-  border: 2px solid #ffab00;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 1.8rem;
-  text-align: center;
 }
 .top-section {
   background-image: url(/images/emily-sea-coiWR0gT8Cw-unsplash.jpg);
   background-repeat: no-repeat;
-  height: 900px;
+  height: 600px;
   width: 900px;
-  margin-left: 10%;
 }
 .cta {
   width: 400px;
@@ -309,6 +316,8 @@ button {
   justify-content: center;
   align-items: center;
   margin-left: 80%;
+  margin-right: 10%;
+  padding-right: 5%;
 }
 .cta h2 {
   font-size: 6rem;

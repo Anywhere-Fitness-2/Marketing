@@ -1,26 +1,14 @@
 button {
   width: 300px;
-  background-color: @accent-color;
-  padding: 4px;
-  border: 2px solid @accent-color;
-  border-radius: 4px;
-  color: @white;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-button:hover {
-  background-color: @brand-black;
-  color: @accent-color;
+  .button-class();
 }
 
 .top-section {
   background-image: url(/images/emily-sea-coiWR0gT8Cw-unsplash.jpg);
   background-repeat: no-repeat;
-  height: 900px;
+  height: 600px;
   width: 900px;
-  margin-left: 10%;
-}
+} //close top-section
 
 .cta {
   width: 400px;
@@ -29,15 +17,17 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-left: 80%;
+  margin-right: 10%;
+  padding-right: 5%;
 
   h2 {
     font-size: 6rem;
     margin-top: 50%;
-  }
+  } //close h2
 
   p {
     font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 10%;
-  }
-}
+  } //close p
+} //close cta

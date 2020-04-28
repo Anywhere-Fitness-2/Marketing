@@ -4,14 +4,24 @@
   font-size: 1.8rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 5%;
-  margin-top: 10%;
+  margin-top: 20%;
+  div {
+    img {
+      width: 200px;
+      margin-bottom: 5%;
+    }
+  }
 
   h2 {
+    margin-top: 5%;
     margin-bottom: 5%;
+    color: @accent-color;
   } //closes h2
   p {
     margin-top: 16px;
+    width: 200px;
   } //closes p
 } //this closes .middleimages
 
@@ -20,22 +30,35 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10%;
 
   p {
     color: @white;
     font-size: 1.8rem;
     font-family: "Lato", sans-serif;
     margin-bottom: 10%;
-  }
+    width: 300px;
+    line-height: 1.25;
+  } //close p
 
   h2 {
     color: @white;
+    margin-bottom: 5%;
+  } //close h2
+  img {
+    width: 300px;
     margin-bottom: 10%;
+    border-radius: 2px;
   }
-}
+
+  button {
+    width: 150px;
+    height: 40px;
+  }
+} //closesection-cards
 
 #cards {
   display: flex;
   justify-content: space-evenly;
   margin-top: 3%;
-}
+} //close cards
