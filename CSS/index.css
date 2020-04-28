@@ -219,13 +219,13 @@ header .logo {
   align-items: center;
 }
 #footer-links {
-  position: fixed;
   background-color: #ffab00;
   margin-top: 3%;
   padding: 4%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 #footer-links a {
   color: #ffffff;
