@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5%;
-  margin-top: 20%;
+  margin-top: 10%;
 
   @media @mobile {
     padding-top: 30%;
@@ -35,6 +35,23 @@
     }
   } //closes p
 } //this closes .middleimages
+
+.section-divider {
+  text-align: center;
+  padding-top: 48px;
+  h2 {
+    color: @accent-color;
+    font-size: 4.8rem;
+    margin-left: 24px;
+    margin-right: 24px;
+    text-decoration: underline;
+  }
+  p {
+    font-size: 3.2rem;
+  }
+  .flex-it(row, center);
+  align-items: center;
+}
 
 .section-cards {
   display: flex;
@@ -79,11 +96,11 @@
 } //close cards
 
 #team1 {
+  max-width: 100%;
   margin-top: 10%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: center;
-  align-items: center;
 
   @media @mobile {
     .flex-it(column, center);
@@ -91,14 +108,13 @@
     padding-left: 5%;
   }
   div {
-    width: 50%;
-    margin-left: 55px;
     padding-bottom: 24px;
+
     .flex-it(column, center);
   }
 
   img {
-    width: 125px;
+    width: 150px;
     height: 200px;
     border-radius: 4px;
 
@@ -119,11 +135,12 @@
 }
 
 #team2 {
+  max-width: 100%;
   margin-top: 10%;
+  margin-bottom: 10%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: center;
-  align-items: center;
 
   @media @mobile {
     .flex-it(column, center);
@@ -131,14 +148,12 @@
     padding-left: 5%;
   }
   div {
-    width: 50%;
-    margin-left: 55px;
     padding-bottom: 24px;
     .flex-it(column, center);
   }
 
   img {
-    width: 125px;
+    width: 150px;
     height: 200px;
     border-radius: 4px;
 
