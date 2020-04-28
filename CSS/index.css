@@ -203,6 +203,13 @@ header nav a {
 header nav a:hover {
   color: #232222;
 }
+@media (max-width:500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 header .logo {
   background-color: #ffab00;
   display: flex;
