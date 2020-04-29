@@ -197,6 +197,16 @@ a {
 header a h2 {
   color: #ffffff;
 }
+@media (max-width:500px) {
+  header a h2 {
+    font-size: 3.4rem;
+  }
+}
+@media (min-width:700px) {
+  header a h2 {
+    font-size: 2.8rem;
+  }
+}
 header nav {
   width: 100%;
   position: relative;
@@ -207,7 +217,7 @@ header nav {
 }
 header nav a {
   justify-content: space-evenly;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
@@ -219,9 +229,10 @@ header nav a:hover {
 @media (max-width:500px) {
   header nav a {
     margin: auto;
-    padding-right: 4px;
-    padding-left: 4px;
+    padding-right: 12px;
+    padding-left: 12px;
     padding-bottom: 8px;
+    font-size: 2rem;
   }
 }
 @media (max-width:500px) {
@@ -233,11 +244,25 @@ header nav a:hover {
   }
 }
 header .logo {
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
-  margin-left: 5%;
+  margin-left: 2%;
   color: #ffffff;
+  font-size: 3rem;
+}
+@media (max-width:500px) {
+  header .logo {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+}
+@media (min-width:700px) {
+  header .logo {
+    margin-left: 2%;
+    width: 100%;
+  }
 }
 @media (max-width:500px) {
   header {
@@ -246,11 +271,15 @@ header .logo {
   }
 }
 .links {
-  background-color: #ffab00;
   width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (min-width:700px) {
+  .links {
+    width: 80%;
+  }
 }
 #footer-links {
   background-color: #ffab00;
@@ -294,7 +323,7 @@ header .logo {
     justify-content: space-evenly;
     align-content: space-around;
     margin-top: 8px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 .middle-images {
@@ -306,11 +335,13 @@ header .logo {
   align-items: center;
   margin-bottom: 5%;
   margin-top: 20%;
+  margin-left: 7%;
 }
 @media (max-width:500px) {
   .middle-images {
-    margin-top: 200px;
+    margin-top: 250px;
     padding-top: 30%;
+    margin-left: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,7 +351,13 @@ header .logo {
   width: 200px;
   margin-bottom: 5%;
   margin-top: 30%;
-  padding-top: 20%;
+  padding-top: 10%;
+}
+@media (min-width:700px) {
+  .middle-images div img {
+    margin-top: 100px;
+    padding-top: 10%;
+  }
 }
 .middle-images h2 {
   margin-top: 5%;
@@ -330,7 +367,7 @@ header .logo {
 }
 .middle-images p {
   margin-top: 16px;
-  width: 200px;
+  width: 300px;
 }
 @media (max-width:500px) {
   .middle-images p {
@@ -340,8 +377,8 @@ header .logo {
 }
 .section-divider {
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -386,7 +423,7 @@ header .logo {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .section-cards p {
   color: #ffffff;
@@ -394,7 +431,7 @@ header .logo {
   font-family: "Lato", sans-serif;
   margin-bottom: 10%;
   width: 300px;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 .section-cards h2 {
   color: #ffab00;
@@ -561,11 +598,12 @@ button:hover {
 }
 @media (max-width:500px) {
   .hero {
+    max-width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 10%;
     height: 300px;
-    width: 300px;
+    width: 375px;
     margin-top: 10%;
   }
 }
@@ -581,8 +619,8 @@ button:hover {
 }
 @media (max-width:500px) {
   .cta {
-    width: 400px;
-    margin-left: 7%;
+    width: 370px;
+    margin-left: 0%;
     padding-top: 55%;
     margin-top: 20%;
   }
@@ -591,19 +629,22 @@ button:hover {
   font-size: 4.8rem;
   margin-top: 20%;
   padding-top: 10%;
-  padding-left: 20%;
+  padding-left: 15%;
   color: #ffab00;
 }
 @media (max-width:500px) {
   .cta h2 {
-    font-size: 3.6rem;
+    width: 375px;
+    font-size: 3rem;
     color: #ffab00;
     margin-top: 100px;
     margin-bottom: 10px;
-    padding-top: 80px;
+    padding-top: 15%;
+    padding-left: 10%;
   }
 }
 .cta p {
+  width: 450px;
   font-size: 2rem;
   margin-top: 5%;
   margin-bottom: 40px;
@@ -612,9 +653,17 @@ button:hover {
 }
 @media (max-width:500px) {
   .cta p {
-    font-size: 1.8rem;
+    width: 350px;
+    font-size: 2rem;
+    margin-left: 0%;
   }
 }
 .cta button {
-  margin-left: 25%;
+  padding-left: 0;
+}
+@media (max-width:500px) {
+  .cta button {
+    margin-left: 30%;
+    width: 175px;
+  }
 }

@@ -7,19 +7,27 @@
   align-items: center;
   margin-bottom: 5%;
   margin-top: 20%;
+  margin-left: 7%;
 
   @media @mobile {
-    margin-top: 200px;
+    margin-top: 250px;
     padding-top: 30%;
+    margin-left: 8%;
 
     .flex-it(column, center);
   }
+
   div {
     img {
       width: 200px;
       margin-bottom: 5%;
       margin-top: 30%;
-      padding-top: 20%;
+      padding-top: 10%;
+
+      @media @tablet {
+        margin-top: 100px;
+        padding-top: 10%;
+      }
     }
   }
 
@@ -31,7 +39,7 @@
   } //closes h2
   p {
     margin-top: 16px;
-    width: 200px;
+    width: 300px;
 
     @media @mobile {
       margin-bottom: 5%;
@@ -42,8 +50,8 @@
 
 .section-divider {
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
   .flex-it(row, center);
   align-items: center;
 
@@ -81,7 +89,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 
   p {
     color: @white;
@@ -89,7 +97,7 @@
     font-family: "Lato", sans-serif;
     margin-bottom: 10%;
     width: 300px;
-    line-height: 1.25;
+    line-height: 1.5;
   } //close p
 
   h2 {
