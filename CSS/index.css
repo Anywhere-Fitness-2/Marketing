@@ -181,6 +181,10 @@ body {
 }
 p {
   color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
 a {
   font-family: "Lato", sans-serif;
@@ -229,7 +233,6 @@ header nav a:hover {
   }
 }
 header .logo {
-  background-color: #ffab00;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
@@ -588,7 +591,7 @@ button:hover {
   font-size: 4.8rem;
   margin-top: 20%;
   padding-top: 10%;
-  padding-left: 10%;
+  padding-left: 20%;
   color: #ffab00;
 }
 @media (max-width:500px) {
@@ -605,10 +608,13 @@ button:hover {
   margin-top: 5%;
   margin-bottom: 40px;
   margin-left: 9%;
-  padding-left: 2%;
+  padding-left: 12%;
 }
 @media (max-width:500px) {
   .cta p {
     font-size: 1.8rem;
   }
+}
+.cta button {
+  margin-left: 25%;
 }
