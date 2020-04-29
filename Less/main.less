@@ -6,10 +6,10 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5%;
-  margin-top: 30%;
+  margin-top: 20%;
 
   @media @mobile {
-    margin-top: 30%;
+    margin-top: 200px;
     padding-top: 30%;
 
     .flex-it(column, center);
@@ -34,7 +34,7 @@
     width: 200px;
 
     @media @mobile {
-      margin-bottom: 10%;
+      margin-bottom: 5%;
       padding-bottom: 5%;
     }
   } //closes p
@@ -43,10 +43,13 @@
 .section-divider {
   text-align: center;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   .flex-it(row, center);
   align-items: center;
 
+  @media @mobile {
+    padding-bottom: 1%;
+  }
   h2 {
     color: @accent-color;
     font-size: 4.8rem;
@@ -90,8 +93,9 @@
   } //close p
 
   h2 {
-    color: @white;
-    margin-bottom: 5%;
+    color: @accent-color;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8%;
   } //close h2
   img {
     width: 300px;
@@ -106,6 +110,10 @@
 
   @media @mobile {
     margin-bottom: 20%;
+  }
+
+  p {
+    margin-bottom: 15%;
   }
 } //closesection-cards
 
