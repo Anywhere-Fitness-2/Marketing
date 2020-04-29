@@ -126,7 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
+*,
+main,
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -284,10 +286,11 @@ header .logo {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5%;
-  margin-top: 20%;
+  margin-top: 30%;
 }
 @media (max-width:500px) {
   .middle-images {
+    margin-top: 30%;
     padding-top: 30%;
     display: flex;
     flex-direction: column;
@@ -297,6 +300,8 @@ header .logo {
 .middle-images div img {
   width: 200px;
   margin-bottom: 5%;
+  margin-top: 30%;
+  padding-top: 20%;
 }
 .middle-images h2 {
   margin-top: 5%;
@@ -316,7 +321,8 @@ header .logo {
 }
 .section-divider {
   text-align: center;
-  padding-top: 48px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -329,8 +335,27 @@ header .logo {
   margin-right: 24px;
   text-decoration: underline;
 }
+@media (max-width:500px) {
+  .section-divider h2 {
+    font-size: 3.6rem;
+  }
+}
 .section-divider p {
   font-size: 3.2rem;
+}
+@media (max-width:500px) {
+  .section-divider p {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width:500px) {
+  .section-divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20%;
+  }
 }
 .section-cards {
   display: flex;
@@ -359,6 +384,11 @@ header .logo {
 .section-cards button {
   width: 150px;
   height: 40px;
+}
+@media (max-width:500px) {
+  .section-cards {
+    margin-bottom: 20%;
+  }
 }
 #cards {
   display: flex;
@@ -457,7 +487,7 @@ header .logo {
 }
 button {
   background-color: #ffab00;
-  width: 300px;
+  width: 200px;
   height: 46px;
   border-radius: 8px;
   font-size: 2rem;
@@ -498,7 +528,7 @@ button:hover {
   }
 }
 .hero {
-  max-width: 100%;
+  max-width: 90%;
   margin-left: 40%;
 }
 @media (max-width:500px) {
@@ -517,8 +547,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 80%;
-  margin-right: 10%;
+  margin-left: 60%;
+  margin-right: 30%;
   padding-right: 5%;
 }
 @media (max-width:500px) {
@@ -526,11 +556,13 @@ button:hover {
     width: 400px;
     margin-left: 5%;
     padding-top: 55%;
+    margin-top: 20%;
   }
 }
 .cta h2 {
   font-size: 6rem;
-  margin-top: 30%;
+  margin-top: 20%;
+  padding-top: 10%;
 }
 @media (max-width:500px) {
   .cta h2 {
