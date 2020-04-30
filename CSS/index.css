@@ -178,6 +178,8 @@ h3 {
 }
 body {
   background-color: #232222;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 p {
   color: #ffffff;
@@ -197,6 +199,11 @@ a {
 header {
   width: 100%;
 }
+@media (min-width: 85.375em) {
+  header {
+    width: 1366px;
+  }
+}
 header a h2 {
   color: #ffffff;
 }
@@ -206,12 +213,17 @@ header a h2 {
   }
 }
 header nav {
-  width: 90%;
+  width: 100%;
   position: relative;
   background-color: #ffab00;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 85.375em) {
+  header nav {
+    width: 100%;
+  }
 }
 @media (max-width:500px) {
   header nav {
@@ -300,6 +312,11 @@ header .logo {
     align-content: space-around;
   }
 }
+@media (min-width: 85.375em) {
+  #footer-links {
+    width: 100%;
+  }
+}
 #footer-links h2 {
   color: #ffffff;
   font-family: "Lato", sans-serif;
@@ -354,6 +371,12 @@ header .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media (min-width: 85.375em) {
+  .middle-images {
+    margin-left: 10%;
+    padding-left: 40px;
   }
 }
 .middle-images div {
@@ -425,6 +448,12 @@ header .logo {
     padding-top: 3%;
   }
 }
+@media (min-width: 85.375em) {
+  .section-divider {
+    width: 100%;
+    margin-left: 24px;
+  }
+}
 .section-divider h2 {
   color: #ffab00;
   font-size: 4.8rem;
@@ -467,6 +496,12 @@ header .logo {
     align-items: center;
     margin-left: 22%;
     margin-top: 0;
+  }
+}
+@media (min-width: 85.375em) {
+  .section-cards {
+    margin-left: 60px;
+    align-items: center;
   }
 }
 .section-cards p {
@@ -745,6 +780,12 @@ button:hover {
     margin-bottom: 10px;
     padding-top: 15%;
     padding-left: 12%;
+  }
+}
+@media (min-width: 85.375em) {
+  .cta h2 {
+    margin-left: 40px;
+    padding-left: 5%;
   }
 }
 .cta p {

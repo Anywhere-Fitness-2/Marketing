@@ -5,6 +5,9 @@
 
 header {
   width: 100%;
+  @media @lg-monitor {
+    width: 1366px;
+  }
 
   a h2 {
     color: @white;
@@ -14,12 +17,16 @@ header {
     }
   }
   nav {
-    width: 90%;
+    width: 100%;
     position: relative;
     background-color: @accent-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @lg-monitor {
+      width: 100%;
+    }
 
     @media @mobile {
       justify-content: center;
@@ -100,6 +107,10 @@ header {
   @media @mobile {
     .flex-it(column, space-evenly);
     align-content: space-around;
+  }
+
+  @media @lg-monitor {
+    width: 100%;
   }
 
   h2 {
