@@ -478,9 +478,8 @@ header .logo {
   #team1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 5%;
   }
 }
 #team1 div {
@@ -488,6 +487,11 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width:500px) {
+  #team1 div {
+    padding-top: 3%;
+  }
 }
 #team1 img {
   width: 150px;
@@ -520,9 +524,9 @@ header .logo {
   #team2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 5%;
+    margin-top: 2%;
   }
 }
 #team2 div {
@@ -530,6 +534,11 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width:500px) {
+  #team2 div {
+    padding-top: 3%;
+  }
 }
 #team2 img {
   width: 150px;
@@ -549,6 +558,12 @@ header .logo {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   margin-top: 8px;
+}
+#team2 .member4 {
+  margin-left: 10%;
+}
+#team2 .member5 {
+  margin-left: 15%;
 }
 button {
   background-color: #ffab00;

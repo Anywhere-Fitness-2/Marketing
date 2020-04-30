@@ -143,14 +143,16 @@
   align-content: center;
 
   @media @mobile {
-    .flex-it(column, center);
+    .flex-it(column, space-around);
     align-items: center;
-    padding-left: 5%;
   }
   div {
     padding-bottom: 24px;
 
     .flex-it(column, center);
+    @media @mobile {
+      padding-top: 3%;
+    }
   }
 
   img {
@@ -183,13 +185,17 @@
   align-content: center;
 
   @media @mobile {
-    .flex-it(column, center);
+    .flex-it(column,space-around);
     align-items: center;
-    padding-left: 5%;
+    margin-top: 2%;
   }
   div {
     padding-bottom: 24px;
     .flex-it(column, center);
+
+    @media @mobile {
+      padding-top: 3%;
+    }
   }
 
   img {
@@ -210,5 +216,15 @@
     font-family: "Lato", sans-serif;
     font-size: 2rem;
     margin-top: 8px;
+  }
+}
+
+#team2 {
+  .member4 {
+    margin-left: 10%;
+  }
+
+  .member5 {
+    margin-left: 15%;
   }
 }
