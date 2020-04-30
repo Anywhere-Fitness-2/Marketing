@@ -220,7 +220,8 @@ header nav {
   position: relative;
   background-color: #ffab00;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-left: 10%;
 }
 @media (max-width:500px) {
   header nav {
@@ -232,7 +233,7 @@ header nav {
 header nav a {
   width: 60%;
   margin-left: 16px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-size: 1.8rem;
   text-decoration: none;
   color: #ffffff;
