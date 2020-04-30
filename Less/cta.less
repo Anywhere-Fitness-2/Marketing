@@ -11,75 +11,94 @@ button {
 }
 
 .top-section {
-  background-image: url(/images/emily-sea-coiWR0gT8Cw-unsplash.jpg);
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 900px;
-  margin-left: 56px;
-  margin-top: 60px;
-
-  @media @mobile {
-    display: block;
-    object-fit: fill;
-
-    width: 100%;
-    height: 300px;
-    width: 375px;
-    background-position: center;
+  .hero {
+    // background-image: url(/images/emily-sea-coiWR0gT8Cw-unsplash.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    background-size: 100%;
+    margin-left: 35%;
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-  } //close media
+
+    @media @mobile {
+      display: block;
+      width: 100%;
+      height: 400px;
+      width: 400px;
+      background-position: center;
+      margin-top: 30%;
+      margin-left: 7%;
+    }
+
+    @media @tablet {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60%;
+      margin-left: 20%;
+    }
+  }
 }
 
 .hero {
-  max-width: 60%;
-  margin-left: 40%;
+  margin-left: 20%;
   padding-right: 50px;
+  display: flex;
+  justify-content: space-around;
 
   @media @mobile {
-    max-width: 100%;
     display: block;
-    margin-left: 5%;
+    margin-left: 20%;
     margin-right: 10%;
     height: 300px;
-    width: 375px;
+    width: 300px;
     margin-top: 10%;
   } //close media
+  @media @tablet {
+    width: 600px;
+  }
 } //close
 
 .cta {
-  width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 50%;
+  margin-left: 5%;
   margin-right: 25%;
-  padding-right: 12%;
+  // padding-right: 12%;
 
   @media @mobile {
     width: 370px;
     margin-left: 0%;
-    padding-top: 55%;
-    margin-top: 20%;
+    padding-top: 2%;
+    margin-top: 2%;
+  }
+
+  @media @tablet {
+    margin-bottom: 250px;
   }
 
   h2 {
     font-size: 4.8rem;
     margin-top: 20%;
     padding-top: 10%;
-    padding-left: 15%;
     color: @accent-color;
 
     @media @mobile {
       width: 375px;
       font-size: 3rem;
       color: @accent-color;
-      margin-top: 100px;
+      margin-top: 16px;
       margin-bottom: 10px;
       padding-top: 15%;
       padding-left: 12%;
+    }
+    @media @tablet {
+      width: 500px;
+      font-size: 3.8rem;
     }
   } //close h2
 
@@ -88,22 +107,31 @@ button {
     font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 40px;
-    margin-left: 9%;
-    padding-left: 12%;
+    margin-left: 13%;
 
     @media @mobile {
       width: 350px;
       font-size: 2rem;
       margin-left: 0%;
     }
+    @media @tablet {
+      width: 500px;
+      margin-left: 0;
+    }
   } //close p
 
   button {
     padding-left: 0;
     margin-left: 48px;
+
     @media @mobile {
       margin-left: 15%;
       width: 250px;
+      height: 40px;
     }
-  }
+
+    @media @tablet {
+      margin-left: 0;
+    }
+  } //close button
 } //close cta

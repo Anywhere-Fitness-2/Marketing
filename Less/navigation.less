@@ -1,5 +1,5 @@
 #home {
-  height: 90vh;
+  height: 10vh;
   width: 100%;
 } //close home
 
@@ -18,8 +18,7 @@ header {
     position: relative;
     background-color: @accent-color;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
 
     @media @mobile {
       justify-content: space-around;
@@ -30,12 +29,13 @@ header {
     a {
       width: 60%;
       margin-left: 16px;
-      justify-content: space-evenly;
+      justify-content: space-around;
       font-size: 1.8rem;
       text-decoration: none;
       color: @white;
       letter-spacing: 1px;
       font-family: "Lato", sans-serif;
+      padding-left: 16px;
 
       &:hover {
         color: @brand-black;
@@ -57,7 +57,7 @@ header {
     } //close media
   } //close nav
   .logo {
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 2%;
@@ -66,7 +66,7 @@ header {
     font-size: 3rem;
 
     @media @mobile {
-      font-family: "Laton", sans-serif;
+      font-family: "Lato", sans-serif;
       font-size: 2.4rem;
       width: 100%;
       justify-content: center;
@@ -82,7 +82,7 @@ header {
 } //close header
 
 .links {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
