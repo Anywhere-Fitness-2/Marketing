@@ -4,25 +4,33 @@
   font-size: 1.8rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
+  align-content: center;
   margin-bottom: 5%;
   margin-top: 20%;
-  margin-left: 7%;
+  margin-left: 3%;
+  padding-right: 10%;
 
   @media @mobile {
-    width: 300px;
+    width: 400px;
     margin-top: 250px;
     padding-top: 30%;
-    margin-left: 20%;
+    margin-left: 10%;
     .flex-it(column, center);
   }
 
   div {
+    width: 300px;
+    padding-left: 24px;
+    padding-right: 24px;
+
     @media @mobile {
       margin-left: 15%;
+      width: 100%;
     }
     img {
       width: 200px;
+      height: 300px;
       margin-bottom: 5%;
       margin-top: 30%;
       padding-top: 10%;
@@ -31,7 +39,7 @@
         width: 250px;
         display: flex;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 3%;
       }
     }
   }
@@ -43,17 +51,18 @@
     color: @accent-color;
 
     @media @mobile {
-      width: 300px;
+      width: 500px;
       margin-bottom: 16px;
       padding-bottom: 4px;
     }
   } //closes h2
+
   p {
     margin-top: 16px;
     width: 300px;
 
     @media @mobile {
-      width: 350px;
+      width: 400px;
       margin-bottom: 5%;
       padding-bottom: 1%;
     }
@@ -61,11 +70,13 @@
 } //this closes .middleimages
 
 .section-divider {
+  width: 95%;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 3%;
   .flex-it(row, center);
   align-items: center;
+  align-content: center;
 
   @media @mobile {
     width: 250px;
@@ -162,6 +173,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 3%;
+  margin-right: 5%;
 
   @media @mobile {
     .flex-it(column, center);

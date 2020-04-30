@@ -194,28 +194,34 @@ a {
   height: 90vh;
   width: 100%;
 }
+header {
+  width: 100%;
+}
 header a h2 {
   color: #ffffff;
 }
 @media (max-width:500px) {
   header a h2 {
-    font-size: 3.4rem;
-  }
-}
-@media (min-width:700px) {
-  header a h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 header nav {
-  width: 100%;
+  width: 90%;
   position: relative;
   background-color: #ffab00;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:500px) {
+  header nav {
+    justify-content: center;
+    width: 500px;
+  }
+}
 header nav a {
+  width: 60%;
+  margin-left: 16px;
   justify-content: space-evenly;
   font-size: 1.8rem;
   text-decoration: none;
@@ -228,6 +234,7 @@ header nav a:hover {
 }
 @media (max-width:500px) {
   header nav a {
+    width: 80%;
     margin: auto;
     padding-right: 12px;
     padding-left: 12px;
@@ -237,6 +244,7 @@ header nav a:hover {
 }
 @media (max-width:500px) {
   header nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -244,7 +252,7 @@ header nav a:hover {
   }
 }
 header .logo {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
@@ -279,7 +287,8 @@ header .logo {
   margin-top: 3%;
   padding: 4%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -293,14 +302,18 @@ header .logo {
 }
 #footer-links h2 {
   color: #ffffff;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 42px;
 }
 #footer-links a {
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: space-around;
   font-size: 1.6rem;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
   font-family: "Lato", sans-serif;
+  margin-bottom: 16px;
 }
 #footer-links a:visited {
   color: #232222;
@@ -325,29 +338,38 @@ header .logo {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
+  align-content: center;
   margin-bottom: 5%;
   margin-top: 20%;
-  margin-left: 7%;
+  margin-left: 3%;
+  padding-right: 10%;
 }
 @media (max-width:500px) {
   .middle-images {
-    width: 300px;
+    width: 400px;
     margin-top: 250px;
     padding-top: 30%;
-    margin-left: 20%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
+.middle-images div {
+  width: 300px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 @media (max-width:500px) {
   .middle-images div {
     margin-left: 15%;
+    width: 100%;
   }
 }
 .middle-images div img {
   width: 200px;
+  height: 300px;
   margin-bottom: 5%;
   margin-top: 30%;
   padding-top: 10%;
@@ -357,7 +379,7 @@ header .logo {
     width: 250px;
     display: flex;
     justify-content: center;
-    margin-left: 5%;
+    margin-left: 3%;
   }
 }
 .middle-images h2 {
@@ -368,7 +390,7 @@ header .logo {
 }
 @media (max-width:500px) {
   .middle-images h2 {
-    width: 300px;
+    width: 500px;
     margin-bottom: 16px;
     padding-bottom: 4px;
   }
@@ -379,12 +401,13 @@ header .logo {
 }
 @media (max-width:500px) {
   .middle-images p {
-    width: 350px;
+    width: 400px;
     margin-bottom: 5%;
     padding-bottom: 1%;
   }
 }
 .section-divider {
+  width: 95%;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 3%;
@@ -392,6 +415,7 @@ header .logo {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 @media (max-width:500px) {
   .section-divider {
@@ -495,6 +519,7 @@ header .logo {
   display: flex;
   justify-content: space-evenly;
   margin-top: 3%;
+  margin-right: 5%;
 }
 @media (max-width:500px) {
   #cards {
@@ -671,8 +696,9 @@ button:hover {
   }
 }
 .hero {
-  max-width: 90%;
+  max-width: 60%;
   margin-left: 40%;
+  padding-right: 50px;
 }
 @media (max-width:500px) {
   .hero {
@@ -693,7 +719,7 @@ button:hover {
   align-items: center;
   margin-left: 50%;
   margin-right: 25%;
-  padding-right: 5%;
+  padding-right: 12%;
 }
 @media (max-width:500px) {
   .cta {
@@ -738,6 +764,7 @@ button:hover {
 }
 .cta button {
   padding-left: 0;
+  margin-left: 48px;
 }
 @media (max-width:500px) {
   .cta button {
