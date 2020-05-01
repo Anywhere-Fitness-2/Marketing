@@ -250,7 +250,8 @@ header .logo {
 }
 .links {
   background-color: #ffab00;
-  width: 50%;
+  width: 80%;
+  margin-right: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -645,7 +646,7 @@ button:hover {
   height: 450px;
   width: 450px;
   background-size: 100%;
-  margin-left: 12%;
+  margin-left: 10%;
   display: flex;
   justify-content: center;
 }
@@ -658,8 +659,9 @@ button:hover {
   }
 }
 .hero img {
-  margin-left: 15%;
+  margin-left: 18%;
   border-radius: 4px;
+  margin-top: 10%;
 }
 @media (max-width:500px) {
   .hero img {
@@ -686,7 +688,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 7%;
+  margin-left: 5%;
   margin-right: 25%;
   padding-right: 15%;
 }
@@ -702,7 +704,7 @@ button:hover {
   font-size: 4rem;
   margin-top: 20%;
   padding-top: 10%;
-  padding-left: 10%;
+  padding-left: 8%;
   color: #ffab00;
 }
 @media (max-width:500px) {
@@ -735,12 +737,24 @@ button:hover {
 }
 .cta button {
   padding-left: 0;
+  background-color: #ffab00;
   width: 200px;
   height: 48px;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+.cta button:hover {
+  background-color: #232222;
+  border: 1px solid #ffab00;
+  color: #ffab00;
+  padding: 4px;
 }
 @media (max-width:500px) {
   .cta button {
-    margin-left: 35%;
-    width: 200px;
+    width: 250px;
+    height: 44px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
