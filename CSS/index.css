@@ -709,6 +709,7 @@ button:hover {
   .cta h2 {
     width: 400px;
     font-size: 2.8rem;
+    text-align: center;
     color: #ffab00;
     margin-top: 16px;
     margin-bottom: 10px;
