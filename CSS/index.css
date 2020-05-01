@@ -645,7 +645,7 @@ button:hover {
   height: 450px;
   width: 450px;
   background-size: 100%;
-  margin-left: 10%;
+  margin-left: 12%;
   display: flex;
   justify-content: center;
 }
@@ -658,7 +658,7 @@ button:hover {
   }
 }
 .hero img {
-  margin-left: 7%;
+  margin-left: 15%;
   border-radius: 4px;
 }
 @media (max-width:500px) {
