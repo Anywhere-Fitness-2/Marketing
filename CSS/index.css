@@ -236,7 +236,6 @@ header nav a:hover {
   }
 }
 header .logo {
-  background-color: #ffab00;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
