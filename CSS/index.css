@@ -192,153 +192,104 @@ a {
   color: #ffffff;
 }
 #home {
-  height: 40vh;
+  height: 30vh;
   width: 100%;
-}
-header {
-  width: 100%;
-}
-header a h2 {
-  color: #ffffff;
-}
-@media (max-width:500px) {
-  header a h2 {
-    font-size: 2.4rem;
-  }
 }
 header nav {
-  height: 80px;
-  background-color: #ffab00;
-  margin-top: 3%;
-  padding: 4%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  width: 100%;
   position: relative;
-}
-@media (max-width:500px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-around;
-  }
-}
-header nav h2 {
-  color: #ffffff;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 42px;
+  background-color: #ffab00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav a {
-  justify-content: center;
-  align-content: center;
+  justify-content: space-evenly;
   font-size: 1.6rem;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
   font-family: "Lato", sans-serif;
-  margin-bottom: 16px;
-  padding-top: 2%;
-}
-header nav a:visited {
-  color: #232222;
-  text-decoration: none;
 }
 header nav a:hover {
   color: #232222;
 }
 @media (max-width:500px) {
   header nav a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-around;
-    margin-top: 8px;
-    font-size: 1.8rem;
-  }
-}
-header nav .logo {
-  width: 40%;
-  display: flex;
-  justify-content: flex-start;
-  padding: 2%;
-  margin-top: 5%;
-  margin-left: 2%;
-  color: #ffffff;
-  font-size: 3rem;
-}
-@media (max-width:500px) {
-  header nav .logo {
-    font-family: "Laton", sans-serif;
-    font-size: 2.4rem;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin: auto;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 8px;
   }
 }
 @media (max-width:500px) {
   header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 8px;
+  }
+}
+header .logo {
+  background-color: #ffab00;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2%;
+  margin-left: 5%;
+  color: #ffffff;
+}
+@media (max-width:500px) {
+  header {
     margin-bottom: 8px;
     padding-bottom: 8px;
   }
 }
-header .links {
+.links {
+  background-color: #ffab00;
   width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header #footer-links {
+#footer-links {
   background-color: #ffab00;
   margin-top: 3%;
   padding: 4%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: relative;
 }
 @media (max-width:500px) {
-  header #footer-links {
+  #footer-links {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: space-around;
   }
+  #footer-links a {
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+  }
+  #footer-links a:visited {
+    color: #232222;
+  }
+  #footer-links a:hover {
+    color: #232222;
+  }
 }
-header #footer-links h2 {
-  color: #ffffff;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 42px;
-}
-header #footer-links a {
-  justify-content: center;
-  align-content: space-around;
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #ffffff;
-  letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 16px;
-}
-header #footer-links a:visited {
-  color: #232222;
-  text-decoration: none;
-}
-header #footer-links a:hover {
-  color: #232222;
-}
-@media (max-width:500px) {
-  header #footer-links a {
+@media (max-width:500px) and (max-width:500px) {
+  #footer-links a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: space-around;
     margin-top: 8px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 .middle-images {
