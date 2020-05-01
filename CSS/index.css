@@ -692,7 +692,7 @@ button:hover {
 }
 @media (max-width:500px) {
   .cta {
-    width: 370px;
+    width: 400px;
     margin-left: 5%;
     padding-top: 16px;
     margin-top: 16px;
@@ -707,8 +707,8 @@ button:hover {
 }
 @media (max-width:500px) {
   .cta h2 {
-    width: 375px;
-    font-size: 3rem;
+    width: 400px;
+    font-size: 2.8rem;
     color: #ffab00;
     margin-top: 16px;
     margin-bottom: 10px;
@@ -739,7 +739,7 @@ button:hover {
 }
 @media (max-width:500px) {
   .cta button {
-    margin-left: 20%;
+    margin-left: 30%;
     width: 175px;
   }
 }
