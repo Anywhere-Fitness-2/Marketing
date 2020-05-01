@@ -3,12 +3,12 @@
   font-family: "Lato", sans-serif;
   font-size: 1.8rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
   align-content: center;
   margin-bottom: 5%;
   margin-top: 10%;
-  margin-left: 3%;
+  margin-left: 7%;
   padding-right: 10%;
 
   @media @mobile {
@@ -78,6 +78,7 @@
   .flex-it(row, center);
   align-items: center;
   align-content: center;
+  margin-left: 3%;
 
   @media @mobile {
     width: 250px;
@@ -117,6 +118,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 3%;
+  padding: 8%;
 
   @media @mobile {
     width: 300px;
@@ -172,14 +174,17 @@
 
 #cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 3%;
   margin-right: 5%;
+  margin-left: 10%;
 
   @media @mobile {
     .flex-it(column, center);
   }
 } //close cards
+
+//about page cards
 
 #team1 {
   max-width: 100%;
