@@ -313,7 +313,7 @@ header .logo {
   .middle-images {
     width: 400px;
     margin-top: 60%;
-    padding-top: 40%;
+    padding-top: 50%;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
@@ -336,7 +336,7 @@ header .logo {
   height: 300px;
   margin-bottom: 5%;
   margin-top: 30%;
-  padding-top: 10%;
+  padding-top: 20%;
 }
 @media (max-width:500px) {
   .middle-images div img {
