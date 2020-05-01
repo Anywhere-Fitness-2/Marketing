@@ -250,7 +250,7 @@ header .logo {
 }
 .links {
   background-color: #ffab00;
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -702,7 +702,7 @@ button:hover {
   font-size: 4rem;
   margin-top: 20%;
   padding-top: 10%;
-  padding-left: 15%;
+  padding-left: 10%;
   color: #ffab00;
 }
 @media (max-width:500px) {
