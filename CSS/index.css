@@ -663,7 +663,7 @@ button:hover {
 }
 @media (max-width:500px) {
   .hero img {
-    margin-left: 10%;
+    margin-left: 5%;
   }
 }
 .hero {
