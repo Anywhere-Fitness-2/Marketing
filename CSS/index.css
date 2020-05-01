@@ -190,6 +190,9 @@ p {
 a {
   font-family: "Lato", sans-serif;
   color: #ffffff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  width: 60%;
 }
 #home {
   height: 30vh;
@@ -222,8 +225,7 @@ header nav a:hover {
 @media (max-width:500px) {
   header nav a {
     margin: auto;
-    padding-right: 4px;
-    padding-left: 4px;
+    width: 100%;
     padding-bottom: 8px;
   }
 }
@@ -236,11 +238,13 @@ header nav a:hover {
   }
 }
 header .logo {
+  font-size: 2rem;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
   margin-left: 5%;
   color: #ffffff;
+  font-size: 1.8rem;
 }
 @media (max-width:500px) {
   header {
@@ -249,21 +253,28 @@ header .logo {
   }
 }
 .links {
-  background-color: #ffab00;
-  width: 80%;
-  margin-right: 150px;
+  width: 60%;
+  margin-right: 140px;
+  margin-left: 48px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width:500px) {
+  .links {
+    width: 100%;
+    margin-left: 50%;
+  }
 }
 #footer-links {
   background-color: #ffab00;
   margin-top: 3%;
   padding: 4%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
+  text-decoration: none;
 }
 @media (max-width:500px) {
   #footer-links {
@@ -273,8 +284,7 @@ header .logo {
     align-content: space-around;
   }
   #footer-links a {
-    justify-content: space-evenly;
-    font-size: 1.6rem;
+    justify-content: space-around;
     text-decoration: none;
     color: #ffffff;
     letter-spacing: 1px;
@@ -296,6 +306,10 @@ header .logo {
     margin-top: 8px;
     font-size: 1.6rem;
   }
+}
+.logo-footer {
+  width: 60%;
+  margin-right: 15%;
 }
 .middle-images {
   color: #ffffff;
@@ -358,6 +372,7 @@ header .logo {
     width: 500px;
     margin-bottom: 16px;
     padding-bottom: 4px;
+    padding-top: 5%;
   }
 }
 .middle-images p {
@@ -709,7 +724,7 @@ button:hover {
 }
 @media (max-width:500px) {
   .cta h2 {
-    width: 400px;
+    width: 100%;
     font-size: 3rem;
     text-align: center;
     color: #ffab00;
@@ -736,12 +751,12 @@ button:hover {
   }
 }
 .cta button {
-  padding-left: 0;
   background-color: #ffab00;
   width: 200px;
   height: 48px;
   border-radius: 8px;
   font-size: 2rem;
+  padding-left: 0;
 }
 .cta button:hover {
   background-color: #232222;
@@ -754,7 +769,6 @@ button:hover {
     width: 250px;
     height: 44px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
   }
 }

@@ -29,8 +29,9 @@ header {
 
       @media @mobile {
         margin: auto;
-        padding-right: 4px;
-        padding-left: 4px;
+        width: 100%;
+        // padding-right: 4px;
+        // padding-left: 4px;
         padding-bottom: 8px;
       }
     } //close a
@@ -40,11 +41,13 @@ header {
     } //close media
   } //close nav
   .logo {
+    font-size: 2rem;
     display: flex;
     justify-content: flex-start;
     padding: 2%;
     margin-left: 5%;
     color: @white;
+    font-size: 1.8rem;
   } //close .logo
 
   @media @mobile {
@@ -54,12 +57,17 @@ header {
 } //close header
 
 .links {
-  background-color: @accent-color;
-  width: 80%;
-  margin-right: 150px;
+  width: 60%;
+  margin-right: 140px;
+  margin-left: 48px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media @mobile {
+    width: 100%;
+    margin-left: 50%;
+  }
 } //close .links
 
 //keep footer
@@ -68,17 +76,17 @@ header {
   margin-top: 3%;
   padding: 4%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
+  text-decoration: none;
 
   @media @mobile {
     .flex-it(column, space-evenly);
     align-content: space-around;
 
     a {
-      justify-content: space-evenly;
-      font-size: 1.6rem;
+      justify-content: space-around;
       text-decoration: none;
       color: @white;
       letter-spacing: 1px;
@@ -99,4 +107,9 @@ header {
       } //closes media
     }
   } //close footerlinks
+}
+
+.logo-footer {
+  width: 60%;
+  margin-right: 15%;
 }
