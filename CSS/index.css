@@ -735,6 +735,7 @@ button:hover {
 .cta button {
   padding-left: 0;
   width: 200px;
+  height: 46px;
 }
 @media (max-width:500px) {
   .cta button {
