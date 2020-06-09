@@ -143,32 +143,40 @@ html {
   font-size: 62.5%;
 }
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local('Noto Sans Japanese Light'), local('NotoSansJapanese-Light'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQaioq1A.otf) format('opentype');
+  src: local("Noto Sans Japanese Light"), local("NotoSansJapanese-Light"),
+    url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQaioq1A.otf)
+      format("opentype");
 }
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F62fjtqLzI2JPCgQBnw7HFowA.otf) format('opentype');
+  src: local("Noto Sans Japanese Regular"), local("NotoSansJapanese-Regular"),
+    url(https://fonts.gstatic.com/s/notosansjp/v25/-F62fjtqLzI2JPCgQBnw7HFowA.otf)
+      format("opentype");
 }
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local('Noto Sans Japanese Medium'), local('NotoSansJapanese-Medium'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQMisq1A.otf) format('opentype');
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQMisq1A.otf)
+      format("opentype");
 }
 @font-face {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Noto Sans Japanese Bold'), local('NotoSansJapanese-Bold'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQei0q1A.otf) format('opentype');
+  src: local("Noto Sans Japanese Bold"), local("NotoSansJapanese-Bold"),
+    url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQei0q1A.otf)
+      format("opentype");
 }
 h1,
 h2,
@@ -198,7 +206,7 @@ a {
   height: 30vh;
   width: 100%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #home {
     height: 20vh;
   }
@@ -210,10 +218,11 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 10%;
 }
 header nav a {
   justify-content: space-evenly;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
@@ -222,14 +231,14 @@ header nav a {
 header nav a:hover {
   color: #232222;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   header nav a {
     margin: auto;
     width: 100%;
     padding-bottom: 8px;
   }
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   header nav {
     display: flex;
     flex-direction: column;
@@ -238,35 +247,36 @@ header nav a:hover {
   }
 }
 header .logo {
-  font-size: 2rem;
+  font-size: 2.4rem;
   display: flex;
   justify-content: flex-start;
   padding: 2%;
   margin-left: 5%;
   color: #ffffff;
-  font-size: 1.8rem;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   header {
+    font-size: 2rem;
     margin-bottom: 8px;
     padding-bottom: 8px;
   }
 }
 .links {
-  width: 60%;
+  width: 70%;
   margin-right: 140px;
-  margin-left: 48px;
+  margin-left: 56px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .links {
     width: 100%;
     margin-left: 50%;
   }
 }
 #footer-links {
+  width: 100%;
   background-color: #ffab00;
   margin-top: 3%;
   padding: 4%;
@@ -276,7 +286,7 @@ header .logo {
   position: relative;
   text-decoration: none;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #footer-links {
     display: flex;
     flex-direction: column;
@@ -297,19 +307,26 @@ header .logo {
     color: #232222;
   }
 }
-@media (max-width:500px) and (max-width:500px) {
+@media (max-width: 500px) and (max-width: 500px) {
   #footer-links a {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: space-around;
-    margin-top: 8px;
+    margin-top: 16px;
     font-size: 1.6rem;
+    margin-left: 50%;
   }
 }
 .logo-footer {
   width: 60%;
   margin-right: 15%;
+}
+@media (max-width: 500px) {
+  .logo-footer {
+    margin-left: 30%;
+    margin-right: 5%;
+  }
 }
 .middle-images {
   color: #ffffff;
@@ -324,7 +341,7 @@ header .logo {
   margin-left: 8%;
   padding-right: 10%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .middle-images {
     width: 400px;
     margin-top: 60%;
@@ -340,7 +357,7 @@ header .logo {
   padding-left: 24px;
   padding-right: 24px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .middle-images div {
     margin-left: 15%;
     width: 100%;
@@ -353,7 +370,7 @@ header .logo {
   margin-top: 30%;
   padding-top: 20%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .middle-images div img {
     width: 250px;
     display: flex;
@@ -367,7 +384,7 @@ header .logo {
   padding-top: 4px;
   color: #ffab00;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .middle-images h2 {
     width: 500px;
     margin-bottom: 16px;
@@ -379,7 +396,7 @@ header .logo {
   margin-top: 16px;
   width: 300px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .middle-images p {
     width: 400px;
     margin-bottom: 5%;
@@ -398,7 +415,7 @@ header .logo {
   align-content: center;
   margin-left: 3%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-divider {
     width: 250px;
     margin-top: 10%;
@@ -413,7 +430,7 @@ header .logo {
   margin-right: 24px;
   text-decoration: underline;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-divider h2 {
     font-size: 3.6rem;
   }
@@ -421,12 +438,12 @@ header .logo {
 .section-divider p {
   font-size: 2.8rem;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-divider p {
     font-size: 2.8rem;
   }
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-divider {
     width: 100%;
     display: flex;
@@ -443,11 +460,11 @@ header .logo {
   margin-top: 3%;
   padding: 8%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-cards {
     width: 300px;
     align-items: center;
-    margin-left: 22%;
+    margin-left: 15%;
     margin-top: 0;
   }
 }
@@ -459,7 +476,7 @@ header .logo {
   width: 300px;
   line-height: 1.5;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-cards p {
     margin-bottom: 5%;
   }
@@ -470,7 +487,7 @@ header .logo {
   margin-bottom: 8%;
   text-align: left;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-cards h2 {
     margin-bottom: 3%;
     text-align: left;
@@ -481,7 +498,7 @@ header .logo {
   margin-bottom: 10%;
   border-radius: 2px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-cards img {
     margin-top: 5%;
     padding-top: 5%;
@@ -491,7 +508,7 @@ header .logo {
   width: 200px;
   height: 40px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .section-cards button {
     margin-top: 5%;
     margin-bottom: 17%;
@@ -504,7 +521,7 @@ header .logo {
   margin-right: 5%;
   margin-left: 10%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #cards {
     display: flex;
     flex-direction: column;
@@ -519,7 +536,7 @@ header .logo {
   align-content: center;
   padding-right: 5%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team1 {
     display: flex;
     flex-direction: column;
@@ -534,7 +551,7 @@ header .logo {
   flex-direction: column;
   justify-content: center;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team1 div {
     padding-top: 3%;
   }
@@ -544,7 +561,7 @@ header .logo {
   height: 150px;
   border-radius: 4px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team1 img {
     width: 200px;
   }
@@ -567,7 +584,7 @@ header .logo {
   align-content: center;
   margin-right: 3%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team2 {
     display: flex;
     flex-direction: column;
@@ -583,7 +600,7 @@ header .logo {
   flex-direction: column;
   justify-content: center;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team2 div {
     padding-top: 3%;
   }
@@ -593,7 +610,7 @@ header .logo {
   height: 150px;
   border-radius: 4px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team2 img {
     width: 200px;
   }
@@ -613,7 +630,7 @@ header .logo {
   text-align: center;
   margin-top: 36px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team2 .member4 {
     margin-left: 3%;
   }
@@ -622,7 +639,7 @@ header .logo {
   margin-left: 16px;
   padding-left: 8px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team2 .member5 {
     margin-left: 8%;
   }
@@ -632,15 +649,15 @@ header .logo {
   margin-right: 16px;
   padding-left: 2px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   #team2 .member6 {
     margin-left: 8%;
   }
 }
 button {
   background-color: #ffab00;
-  width: 200px;
-  height: 48px;
+  width: 300px;
+  height: 55px;
   border-radius: 8px;
   font-size: 2rem;
 }
@@ -650,7 +667,8 @@ button:hover {
   color: #ffab00;
   padding: 4px;
 }
-@media (max-width:500px) {
+
+@media (max-width: 500px) {
   button {
     width: 250px;
     height: 44px;
@@ -659,6 +677,7 @@ button:hover {
     margin-right: auto;
   }
 }
+
 .hero {
   background-repeat: no-repeat;
   height: 450px;
@@ -668,7 +687,7 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .hero {
     height: 300px;
     width: 300px;
@@ -681,7 +700,7 @@ button:hover {
   border-radius: 4px;
   margin-top: 10%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .hero img {
     margin-left: 8%;
   }
@@ -690,7 +709,7 @@ button:hover {
   width: 90%;
   margin-left: 15%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .hero {
     width: 100%;
     display: block;
@@ -710,7 +729,7 @@ button:hover {
   margin-right: 25%;
   padding-right: 15%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .cta {
     width: 400px;
     margin-left: 5%;
@@ -725,7 +744,7 @@ button:hover {
   padding-left: 8%;
   color: #ffab00;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .cta h2 {
     width: 100%;
     font-size: 3rem;
@@ -745,7 +764,7 @@ button:hover {
   margin-left: 9%;
   padding-left: 12%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .cta p {
     width: 350px;
     font-size: 2rem;
@@ -767,7 +786,7 @@ button:hover {
   color: #ffab00;
   padding: 4px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .cta button {
     width: 250px;
     height: 44px;

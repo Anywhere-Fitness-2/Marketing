@@ -15,9 +15,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10%;
+
     a {
       justify-content: space-evenly;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       text-decoration: none;
       color: @white;
       letter-spacing: 1px;
@@ -41,25 +43,25 @@ header {
     } //close media
   } //close nav
   .logo {
-    font-size: 2rem;
+    font-size: 2.4rem;
     display: flex;
     justify-content: flex-start;
     padding: 2%;
     margin-left: 5%;
     color: @white;
-    font-size: 1.8rem;
   } //close .logo
 
   @media @mobile {
+    font-size: 2rem;
     margin-bottom: 8px;
     padding-bottom: 8px;
   }
 } //close header
 
 .links {
-  width: 60%;
+  width: 70%;
   margin-right: 140px;
-  margin-left: 48px;
+  margin-left: 56px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -72,6 +74,7 @@ header {
 
 //keep footer
 #footer-links {
+  width: 100%;
   background-color: @accent-color;
   margin-top: 3%;
   padding: 4%;
@@ -100,10 +103,11 @@ header {
         color: @brand-black;
       } //close hover
       @media @mobile {
-        .flex-it(column, space-evenly);
+        .flex-it(column, center);
         align-content: space-around;
-        margin-top: 8px;
+        margin-top: 16px;
         font-size: 1.6rem;
+        margin-left: 50%;
       } //closes media
     }
   } //close footerlinks
@@ -112,4 +116,9 @@ header {
 .logo-footer {
   width: 60%;
   margin-right: 15%;
+
+  @media @mobile {
+    margin-left: 30%;
+    margin-right: 5%;
+  }
 }
